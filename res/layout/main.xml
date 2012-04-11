@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<ImageView android:id="@+id/ImageView01" android:scaleType="fitStart"
+		android:layout_alignParentTop="true" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_weight="1"
+		android:visibility="visible" />
+
+		<Button android:layout_alignParentTop="true" android:text="Save And Hide" android:id="@+id/hideButton"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:visibility="invisible"  ></Button>
+		<EditText android:layout_width="fill_parent" android:id="@+id/hiddentext"
+			android:text="Hidden Text" android:layout_height="fill_parent"
+			 android:visibility="invisible" android:layout_below="@+id/hideButton"></EditText>
+
+	<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" ads:adUnitId="a14df24601d1429"
+		ads:adSize="BANNER" ads:loadAdOnCreate="false" />
+</RelativeLayout>
